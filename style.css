@@ -1,0 +1,78 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('assets/images/balloons.gif') center center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(255,255,255,0.3);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  background: #ffffffcc;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+input, button {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input { border: 1px solid #ccc; }
+button {
+  border: none;
+  background: #ff4081;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover { background: #f50057; }
+
+#cake {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 60px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+#videoContainer { margin-top: 15px; }
+video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+#progressBarContainer {
+  width: 90%;
+  background: #ddd;
+  border-radius: 20px;
+  margin: 20px auto;
+  height: 20px;
+}
+#progressBar {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #8bc34a);
+  border-radius: 20px;
+  transition: width 0.5s;
+}
