@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🎂 Friendship Birthday Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <div class="container" id="loginBox">
+    <h2>🔐 Login</h2>
+    <input type="text" id="username" placeholder="Username (3 letters)" />
+    <input type="date" id="dob" />
+    <button onclick="checkLogin()">Login</button>
+  </div>
+  <div class="container" id="quizBox" style="display:none;">
+    <h2>🎊 Quiz Time!</h2>
+    <p id="question"></p>
+    <div id="videoContainer"></div>
+    <div id="progressBarContainer"><div id="progressBar"></div></div>
+  </div>
+  <div id="cake">🎂🎉🎂</div>
+  <audio id="music" loop>
+    <source src="assets/music/happy_birthday.mp3" type="audio/mpeg" />
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
